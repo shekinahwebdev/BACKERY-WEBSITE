@@ -21,9 +21,7 @@ body {
 }
 
 .main-page {
-  /* border: 2px solid red; */
   width: 100%;
-  /* max-width: 500px; */
 }
 
 .site-header {
@@ -33,7 +31,6 @@ body {
   background-size: cover;
   height: 400px;
   width: 100%;
-  border: 2px solid black;
   color: white;
   padding: 1rem 1rem 1rem;
 }
@@ -85,7 +82,7 @@ li a {
   align-items: flex-start;
   justify-content: flex-start;
   text-wrap: wrap;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 .welcome-message h1 {
@@ -100,11 +97,12 @@ li a {
 }
 
 .message {
-  /* border: 2px solid red; */
-  margin-top: 1rem;
   width: 70%;
-  /* padding: 1rem; */
   font-size: 1.5rem;
+}
+
+.message p {
+  font-size: 1.3rem;
 }
 
 .product-gallery {
@@ -144,12 +142,15 @@ li a {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background: transparent;
 }
 
 .product-image {
   width: 250px;
   height: auto;
+}
+
+.butter-bread-image {
+  height: 165px;
 }
 
 .icon {
@@ -158,7 +159,6 @@ li a {
 }
 
 .site-footer {
-  border: 2px solid blue;
   background-color: var(--royal-blue);
   padding: 1rem;
 }
@@ -195,11 +195,13 @@ li a {
 
 .about_us {
   text-align: center;
+  color: black;
 }
 
 .explore {
   text-align: center;
   margin-top: 1rem;
+  color: black;
 }
 
 .about_us p,
@@ -223,6 +225,7 @@ li a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .other-services-image {
@@ -234,6 +237,16 @@ li a {
 .other_services p {
   font-size: 1rem;
   margin-top: 1rem;
+  color: black;
+}
+.main_offer p {
+  color: white;
+}
+
+.main_offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (min-width: 1000px) {
@@ -244,6 +257,11 @@ li a {
   .welcome-message {
     padding: 2rem 2rem 0rem;
   }
+
+  .welcome-message h1 {
+    font-size: 2rem;
+  }
+
   .welcome-message p {
     width: 50%;
     line-height: 1.8;
@@ -251,8 +269,10 @@ li a {
   .message {
     padding: 0rem 2rem 2rem;
   }
+
   .message p {
-    margin-top: 0rem;
+    margin-top: 1rem;
+    font-size: 2rem;
   }
 
   .product-gallery {
@@ -294,6 +314,7 @@ li a {
   .other_services .our_offer {
     padding: 1rem;
     text-align: left;
+    color: white;
   }
 
   .main_offer {
