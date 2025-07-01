@@ -1,0 +1,157 @@
+:root {
+  --royal-blue: rgb(21, 56, 151);
+}
+
+.contact-header {
+  background-image: url(/assets/images/various-buns-breakfast.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 1rem 1rem 1rem;
+}
+
+.contact-header-bottom {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--royal-blue);
+  padding: 1rem 2rem;
+}
+
+.home-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.home-link,
+.icon-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style-type: none;
+  /* color: black; */
+}
+
+.caller-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  padding: 1.5rem 1rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.icon-box {
+  border: 2px solid;
+  background-color: var(--royal-blue);
+  padding: 1rem;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  /* width: 200px; */
+}
+
+.phone-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.phone-link li a {
+  color: black;
+  font-size: 1.3rem;
+}
+
+.contact-fillment {
+  margin: auto;
+  padding: 2rem;
+  /* border: 2px solid red; */
+  text-align: center;
+}
+
+.contact-fillment h2 {
+  font-size: 1rem;
+  color: var(--royal-blue);
+}
+
+.contact-fillment h3 {
+  font-size: 2rem;
+}
+
+.contact-fillment p {
+  padding: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.send-btn {
+  background-color: var(--royal-blue);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (min-width: 800px) {
+  .contact-page {
+    padding: 3rem;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    /* border: 2px solid; */
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .contact-fillment {
+    margin-top: 2rem;
+  }
+}
