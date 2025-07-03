@@ -8,7 +8,8 @@
   background-position: center;
   background-size: cover;
   color: white;
-  padding: 1rem 1rem 1rem;
+  padding: 1rem 0.5rem 1rem;
+  /* border: 2px solid brown; */
 }
 
 .contact-header-bottom {
@@ -25,8 +26,8 @@
 }
 
 .home-icon {
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
 }
 
 .home-link,
@@ -134,6 +135,27 @@ textarea {
 
 .send-btn:hover {
   background-color: #0056b3;
+}
+
+@media screen and (max-width: 400px) {
+  .contact-header .header-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+
+  .contact .contact-icons {
+    display: none;
+  }
+
+  .home-icon {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 @media screen and (min-width: 800px) {
