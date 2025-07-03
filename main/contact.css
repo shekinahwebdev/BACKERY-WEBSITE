@@ -18,21 +18,25 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--royal-blue);
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
+}
+.contact-header-bottom h2 {
+  font-size: 1.2rem;
 }
 
 .home-icon {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 }
 
 .home-link,
 .icon-box {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
+  justify-content: center;
   list-style-type: none;
-  /* color: black; */
+  font-size: 1rem;
 }
 
 .caller-icon {
@@ -56,9 +60,9 @@
 }
 
 .icon-box {
-  border: 2px solid;
   background-color: var(--royal-blue);
   padding: 1rem;
+  border-radius: 15px;
 }
 
 .contact-section {
