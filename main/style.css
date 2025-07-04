@@ -302,6 +302,23 @@ li a {
   align-items: center;
 }
 
+@media screen and (max-width: 400px) {
+  .site-header .header-top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+
+  .contact .contact-icons {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 900px) {
   .nav-links {
     gap: 10rem;
