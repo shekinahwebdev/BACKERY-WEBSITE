@@ -9,7 +9,6 @@
   background-size: cover;
   color: white;
   padding: 1rem 0.5rem 1rem;
-  /* border: 2px solid brown; */
 }
 
 .contact-header-bottom {
@@ -48,7 +47,6 @@
 .contact-page {
   display: flex;
   flex-direction: column;
-  /* border: 2px solid red; */
   padding: 1.5rem 1rem;
 }
 
@@ -73,7 +71,6 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  /* width: 200px; */
 }
 
 .phone-link {
@@ -92,7 +89,6 @@
 .contact-fillment {
   margin: auto;
   padding: 2rem;
-  /* border: 2px solid red; */
   text-align: center;
 }
 
@@ -194,7 +190,6 @@ textarea {
     flex-direction: row;
     justify-content: space-between;
     gap: 2rem;
-    /* border: 2px solid; */
   }
 
   .contact-section {

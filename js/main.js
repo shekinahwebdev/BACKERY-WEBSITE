@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
 
     const email = form.from_email.value;
-
     if (!isValidEmail(email)) {
       emailInput.classList.add("invalid");
       errorMessage.classList.add("show");
