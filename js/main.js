@@ -47,4 +47,17 @@ document.addEventListener("DOMContentLoaded", () => {
       from_email: params.email,
     });
   });
+
+  const links = document.querySelectorAll("a");
+
+  links.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.body.classList.add("fade-out");
+
+      setTimeout(() => {
+        window.location.href = link.href;
+      }, 300); // Duration of the animation
+    });
+  });
 });

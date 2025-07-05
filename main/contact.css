@@ -2,6 +2,14 @@
   --royal-blue: rgb(21, 56, 151);
 }
 
+body {
+  transition: opacity 0.3s ease;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
 .contact-header {
   background-image: url(/assets/images/various-buns-breakfast.jpg);
   background-repeat: no-repeat;

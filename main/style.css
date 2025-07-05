@@ -18,6 +18,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .main-page {
