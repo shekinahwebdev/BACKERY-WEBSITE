@@ -6,17 +6,6 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="style.css" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "PiwRVmlBMsq1h1u8k",
-        });
-      })();
-    </script>
   </head>
   <body>
     <main class="main-page contact page">
@@ -152,6 +141,7 @@
           <form id="contact-form">
             <div class="form-group">
               <input
+                id="name"
                 type="text"
                 name="from_name"
                 placeholder="Your Name"
@@ -161,8 +151,9 @@
 
             <div class="form-group">
               <input
+                id="email"
                 class="email_input"
-                type="text"
+                type="email"
                 name="from_email"
                 placeholder="Your Email"
                 required
@@ -171,6 +162,7 @@
             </div>
             <div class="form-group">
               <textarea
+                id="message"
                 name="message"
                 placeholder="Your Message"
                 rows="5"
@@ -260,5 +252,16 @@
       </footer>
     </main>
     <script src="/js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "PiwRVmlBMsq1h1u8k",
+        });
+      })();
+    </script>
   </body>
 </html>

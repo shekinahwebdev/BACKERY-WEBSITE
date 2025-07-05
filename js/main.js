@@ -7,37 +7,38 @@ document.addEventListener("DOMContentLoaded", () => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
   }
-
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const email = form.from_email.value;
+    const email = emailInput.value;
+
+    const params = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+    };
+
     if (!isValidEmail(email)) {
       emailInput.classList.add("invalid");
       errorMessage.classList.add("show");
+      return;
     } else {
       emailInput.classList.remove("invalid");
       errorMessage.classList.remove("show");
     }
 
-    emailjs
-      .send("service_yp7qdcq", "template_4v1i86q", {
-        from_name: name,
-        from_email: email,
-        message: message,
-      })
-      .then(
-        () => {
-          alert("Message sent successfully!");
-          form.reset();
-          setTimeout(() => {
-            window.location.reload();
-          }, 100);
-        },
-        (error) => {
-          console.error("Email send error:", error);
-          alert("Something went wrong. Please try again.");
-        }
-      );
+    emailjs.send("service_z5fg2vk", "template_i45yjbx", params).then(
+      () => {
+        alert("Message sent successfully!");
+        form.reset();
+        setTimeout(() => {
+          window.location.reload();
+        }, 100);
+      },
+      (error) => {
+        console.error("Email send error:", error);
+        alert("Something went wrong. Please try again.");
+      }
+    );
   });
 });
