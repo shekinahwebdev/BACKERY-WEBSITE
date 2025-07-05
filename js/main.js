@@ -15,10 +15,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!isValidEmail(email)) {
       emailInput.classList.add("invalid");
-      errorMessage.style.display = "flex";
+      errorMessage.classList.add("show");
     } else {
       emailInput.classList.remove("invalid");
-      errorMessage.style.display = "none";
+      errorMessage.classList.remove("show");
     }
+
+    emailjs
+      .send("service_yp7qdcq", "template_4v1i86q", {
+        from_name: name,
+        from_email: email,
+        message: message,
+      })
+      .then(
+        () => {
+          alert("Message sent successfully!");
+          form.reset();
+          setTimeout(() => {
+            window.location.reload();
+          }, 100);
+        },
+        (error) => {
+          console.error("Email send error:", error);
+          alert("Something went wrong. Please try again.");
+        }
+      );
   });
 });

@@ -149,6 +149,10 @@ textarea {
   border: 2px solid red;
 }
 
+.error.show {
+  display: block;
+}
+
 @media screen and (max-width: 400px) {
   .contact-header .header-top {
     display: flex;
