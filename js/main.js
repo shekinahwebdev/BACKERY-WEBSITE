@@ -29,9 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     emailjs.send("service_z5fg2vk", "template_i45yjbx", params).then(
       () => {
-        alert("Message sent successfully!");
         form.reset();
+        document.querySelector(".success-message").style.display = "block";
         setTimeout(() => {
+          document.querySelector(".success-message").style.display = "none";
           window.location.reload();
         }, 100);
       },
@@ -40,5 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Something went wrong. Please try again.");
       }
     );
+
+    emailjs.send("service_z5fg2vk", "template_sbyshas", {
+      from_name: params.name,
+      from_email: params.email,
+    });
   });
 });
