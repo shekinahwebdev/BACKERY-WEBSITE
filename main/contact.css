@@ -137,6 +137,18 @@ textarea {
   background-color: #0056b3;
 }
 
+.error {
+  font-size: 0.8rem;
+  text-align: left;
+  margin-top: 0rem;
+  color: red;
+  display: none;
+}
+
+.invalid {
+  border: 2px solid red;
+}
+
 @media screen and (max-width: 400px) {
   .contact-header .header-top {
     display: flex;
